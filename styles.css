@@ -1,5 +1,5 @@
 /* HERO SECTION */
-.hero {
+.hero 
     background: url("hero-phone-bg.jpg") no-repeat center top;
     background-size: cover; /* Ensures image fills screen */
     background-color: black;
