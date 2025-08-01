@@ -1,6 +1,6 @@
 /* HERO SECTION */
-.hero 
-    background: url("hero-phone-bg.jpg") no-repeat center top;
+.hero {
+    background: url("hero-phone-bg.jpg.png") no-repeat center top;
     background-size: cover; /* Ensures image fills screen */
     background-color: black;
     height: 100vh;
