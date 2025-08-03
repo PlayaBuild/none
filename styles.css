@@ -481,33 +481,41 @@
   font-weight: bold;
   text-shadow: 0 0 5px #007BFF, 0 0 10px #007BFF;
 }
-.terms-box {
-  width: 600px;
-  max-width: 90%;
-  margin: 50px auto;
-  background-color: #000;
-  border: 1px solid #007BFF;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #007BFF;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
-  text-align: left;
+.terms-container {
+  width: 320px;
+  margin: 30px auto;
+  padding: 10px;
+  background: transparent;
+  border: none;
 }
-.terms-box h2 {
-  color: #00BFFF;
+
+.terms-header {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.8); /* blue glow like “Spin & Win” */
 }
-.terms-box p {
-  line-height: 1.6;
+
+.terms-scroll {
+  height: 200px;
+  overflow-y: auto;
+  padding: 15px;
   font-size: 14px;
+  line-height: 1.6;
+  color: white;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.4); /* very subtle background */
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.terms-box a {
-  color: #00BFFF;
-  text-decoration: none;
+
+.terms-subhead {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.8); /* match “Earn Fast” glow */
 }
-.terms-box a:hover {
-  text-decoration: underline;
-}
+
 
