@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PlayaBuild</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <h1>Your Hustle. Your Cash. Your Empire.</h1>
-      <p>100 Recruits = $500 | 500 Recruits = $3,500+</p>
-      <p class="description">
-        PlayaBuild is your recruitment-powered platform with payouts and
-        competitive game modes. Recruit, earn, and win.
-      </p>
-      <button class="cta-btn">START RECRUITING NOW</button>
-      <p class="cta-sub">*Subscription $9.99/month required.</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayaBuild Hero</title>
 
+  <!-- ✅ Link to your external CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Your Hustle. Your Cash. Your Empire.</h1>
+    <p class="hero-stats">100 Recruits = $500 | 500 Recruits = $3,600+</p>
+    <p class="description">PlayaBuild is your recruitment-powered platform...</p>
+    <button class="cta-btn">START RECRUITING NOW</button>
+    <p class="cta-sub">*Subscription $9.99/month required.</p>
+  </header>
+</body>
     <!-- WHAT IS PLAYABUILD -->
     <section class="what-is">
       <h2>What Is PlayaBuild?</h2>
@@ -39,7 +39,13 @@
         <strong>pure hustle = pure profit.</strong>
       </p>
     </section>
-    <!-- SUBSCRIPTION & RANKS -->
+    <!-- SUBSCRIPTION & d>
+  <meta charset="UTF-8" />
+  <title>PlayaBuild</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<section class="hero">
+  <h1>Your RANKS -->
     <section class="subscription">
       <h2>Stay Subscribed – Keep Your Rank</h2>
       <p>
@@ -178,33 +184,48 @@
           “PlayaBuild turned my side hustle into a daily payout...”
         </blockquote>
         <p class="testimonial-name">— J. Carter, Early Recruiter</p>
+      </section>
+      <!-- LEGAL & FINE PRINT -->
+      <section class="legal">
+        <h2>Our Commitment to Fair Play</h2>
+        <p>
+          PlayaBuild is <strong>not gambling.</strong> It’s a recruitment-based
+          reward platform with sweepstakes for entertainment purposes only. All
+          payouts and contests are based on verified recruit performance.
+          <strong>No refunds on VC purchases or spin tickets.</strong>
+          Sweepstakes prizes (cars, vacations, electronics) are promotional and
+          subject to availability.
+        </p>
+        <p class="fine-print">
+          PlayaBuild LLC © 2025. All rights reserved. Participation in
+          sweepstakes is free with no purchase necessary. Terms & conditions
+          apply.
+        </p>
+      </section>
 
-</div>
-
- <div class="terms-box">
-  <h2>RECRUITER TERMS & CONDITIONS</h2>
-  <p>
-    By enrolling in the PlayaBuild platform, you confirm that you are engaging as an independent recruiter and not an employee, agent, or representative of the company. All recruiters are responsible for their own tax reporting, legal compliance, and conduct. The use of multiple email accounts, fake social media accounts, or fraudulent referrals is strictly prohibited and will result in permanent banning and payout forfeiture.
-  </p>
-
-  <h2>LEGAL AGE REQUIREMENT</h2>
-  <p>
-    You must be at least 18 years old to be eligible for payouts. If you are under 18 and found to be participating without legal consent, your account will be removed. There is no ID verification at this time, so by agreeing to these terms, you acknowledge that you are 18+ and assume all legal liability for your actions and any consequences thereof.
-  </p>
-
-  <label>
-    <input type="checkbox" id="agreeCheckbox">
-    I agree to the <a href="#">PlayaBuild Terms & Conditions</a> above
-  </label>
-
-  <button id="recruitBtn" class="cta-btn" disabled>START RECRUITING NOW</button>
-
-  <p class="subnote">*Subscription $9.99/month required.</p>
-</div>
-
-<!-- Email outside the box -->
-<p style="text-align: center; color: white; font-size: 14px; margin-top: 10px;">Questions? Email us at <a href="mailto:info@playabuild.com" style="color: #00ffff; text-shadow: 0 0 8px #00ffff;">info@playabuild.com</a></p>
-
-
-
-
+      <!-- CTA BANNER -->
+      <section class="cta-banner">
+        <h2>Ready To Build Your Empire?</h2>
+        <button class="cta-btn">Start Recruiting Now</button>
+        <p class="cta-sub">*Subscription $9.99/month required.</p>
+      </section>
+    </section>
+    <footer>
+      <p id="email-container">Loading email...</p>
+  
+      <script>
+        const emailElement = document.getElementById("email-container");
+        if (emailElement) {
+          emailElement.innerHTML = '<a href="mailto:info@playabuild.com">info@playabuild.com</a>';
+        } else {
+          console.error("Email container not found.");
+        }
+      </script>
+    
+      <p id="backend-status">Loading backend status...</p>
+      <script src="script.js"></script>
+    </footer>
+    </body>
+    </html>
+    
+      
