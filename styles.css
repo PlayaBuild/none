@@ -481,4 +481,33 @@
   font-weight: bold;
   text-shadow: 0 0 5px #007BFF, 0 0 10px #007BFF;
 }
+.terms-box {
+  width: 600px;
+  max-width: 90%;
+  margin: 50px auto;
+  background-color: #000;
+  border: 1px solid #007BFF;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #007BFF;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
+.terms-box h2 {
+  color: #00BFFF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.terms-box p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+.terms-box a {
+  color: #00BFFF;
+  text-decoration: none;
+}
+.terms-box a:hover {
+  text-decoration: underline;
+}
 
