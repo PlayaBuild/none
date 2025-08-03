@@ -9,7 +9,7 @@
   <body>
     <header class="hero">
       <h1>Your Hustle. Your Cash. Your Empire.</h1>
-      <p>100 Recruits = $500 | 500 Recruits = $3,600+</p>
+      <p>100 Recruits = $500 | 500 Recruits = $3,500+</p>
       <p class="description">
         PlayaBuild is your recruitment-powered platform with payouts and
         competitive game modes. Recruit, earn, and win.
@@ -178,10 +178,10 @@
           “PlayaBuild turned my side hustle into a daily payout...”
         </blockquote>
         <p class="testimonial-name">— J. Carter, Early Recruiter</p>
-      <!-- TERMS & CONDITIONS BOX (FULLY STUFFED) -->
+      <!-- TERMS & CONDITIONS FULL BOX -->
 <div class="terms-box">
   <h2>Recruiter Terms & Conditions</h2>
-  <p>By enrolling in the PlayaBuild platform, you confirm that you are engaging as an independent recruiter and not an employee, agent, or representative of the company. All recruiters are responsible for their own tax reporting, legal compliance, and conduct. The use of multiple email accounts, fake social media accounts, or fraudulent referrals is strictly prohibited and will result in permanent banning and payout forfeiture. Any abuse of the payout system—manual or automated—will be detected and flagged. PlayaBuild retains the right to refuse access or payment to any user suspected of misconduct.</p>
+  <p>By enrolling in the PlayaBuild platform, you confirm that you are engaging as an independent recruiter and not an employee, agent, or representative of the company. All recruiters are responsible for their own tax reporting, legal compliance, and conduct. The use of multiple email accounts, fake social media accounts, or fraudulent referrals is strictly prohibited and will result in permanent banning and payout forfeiture.</p>
 
   <h2>Legal Age Requirement</h2>
   <p>You must be at least 18 years old to be eligible for payouts. If you are under 18 and found to be participating without legal consent, your account will be removed. There is no ID verification at this time, so by agreeing to these terms, you acknowledge that you are 18+ and assume all legal liability for your actions and any consequences thereof. Parents/guardians take full responsibility for underage usage of this system.</p>
@@ -195,18 +195,20 @@
   <h2>Our Commitment to Fair Play</h2>
   <p>We are committed to fairness and transparency. Every payout is tracked. Every referral is verified. We believe in rewarding real motion — not shortcut schemes or fraud. By joining this platform, you agree to uphold the integrity of PlayaBuild and avoid any conduct that undermines trust, equity, or user security.</p>
 
+  <!-- AGREE CHECKBOX -->
   <div class="checkbox">
     <input type="checkbox" id="agreeBox">
     <label for="agreeBox">I agree to the PlayaBuild Terms & Conditions above</label>
   </div>
+
+  <!-- CTA BUTTON -->
+  <div class="cta">
+    <button class="cta-btn" id="subscribeBtn" disabled>START RECRUITING NOW</button>
+    <p class="cta-sub">*Subscription $9.99/month required.</p>
+  </div>
 </div>
 
-<!-- CTA BUTTON -->
-<div class="cta">
-  <button class="cta-btn" id="subscribeBtn" disabled>START RECRUITING NOW</button>
-  <p class="cta-sub">*Subscription $9.99/month required.</p>
-</div>
-
+<!-- SCRIPT TO ENABLE BUTTON -->
 <script>
   const checkbox = document.getElementById("agreeBox");
   const subscribeBtn = document.getElementById("subscribeBtn");
@@ -222,9 +224,6 @@
   });
 </script>
 
-      Questions? Email us at
-      <a href="mailto:info@playabuild.com">info@playabuild.com</a>
-    </footer>
-  </body>
-</html>
+      <p>Questions? Email us at <a href="mailto:info@playabuild.com" class="email-link">info@playabuild.com</a></p>
+
 
