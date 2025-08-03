@@ -443,155 +443,56 @@
   /* SECTION SPACING */
   section {
     padding: 80px 20px; /* Even spacing for sections */
-  }
-  
-  section h2 {
-    margin-bottom: 20px;
-  }
-  
-  section p {
-    margin-bottom: 15px;
-    line-height: 1.6; /* Better readability */
-  }
-  
-  /* BUTTON FIX */
-  .cta-btn {
-    margin-top: 20px;
-  }
-  
-  /* FOOTER */
-  footer {
-    margin-top: 50px;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #ccc;
-  }
-  
-  footer a {
-    color: #00bfff;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  a.email-link {
-  color: #007BFF;
-  text-decoration: none;
-  font-weight: bold;
-  text-shadow: 0 0 5px #007BFF, 0 0 10px #007BFF;
-}
+/* TERMS & CONDITIONS SECTION */
 .terms-container {
-  width: 320px;
-  margin: 30px auto;
-  padding: 10px;
-  background: transparent;
-  border: none;
-}
-
-.terms-header {
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
-  text-shadow: 0 0 6px rgba(0, 255, 255, 0.8); /* blue glow like “Spin & Win” */
-}
-
-.terms-scroll {
-  height: 200px;
-  overflow-y: auto;
-  padding: 15px;
-  font-size: 14px;
-  line-height: 1.6;
-  color: white;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.4); /* very subtle background */
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.terms-subhead {
-  font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  color: white;
-  text-shadow: 0 0 6px rgba(0, 255, 255, 0.8); /* match “Earn Fast” glow */
-}
-.terms-box {
-  width: 600px;
-  max-width: 90%;
-  margin: 50px auto;
-  background-color: #000;
-  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px 30px;
   border-radius: 10px;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
-  text-align: left;
-  border: 1px solid #007BFF;
-  box-shadow: 0 0 15px #007BFF;
+  max-width: 700px;
+  margin: 60px auto 100px;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+  color: #ffffff;
 }
 
-.terms-box h2 {
-  font-size: 20px;
-  color: #007BFF;
-  text-align: center;
+.terms-container h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
-  font-weight: bold;
-  text-shadow: 0 0 8px #007BFF, 0 0 16px #007BFF;
-}
-
-.terms-box p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #fff;
-}
-
-.terms-box label {
-  display: block;
-  margin: 20px 0;
-  font-size: 14px;
-}
-
-.terms-box a {
-  color: #007BFF;
-  text-decoration: none;
-  font-weight: bold;
-  text-shadow: 0 0 4px #007BFF, 0 0 8px #007BFF;
-}
-
-.terms-box a:hover {
-  text-decoration: underline;
-}
-
-.terms-box .cta-btn {
-  display: block;
-  width: 100%;
-  margin: 20px 0;
-  padding: 15px;
-  background-color: #007BFF;
-  color: #000;
-  border: none;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 0 12px #007BFF, 0 0 24px #007BFF;
-  transition: opacity 0.3s ease;
-}
-
-.terms-box .cta-btn:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
-.terms-box .subnote,
-.terms-box .email-note {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00bfff, 0 0 12px #00bfff;
   text-align: center;
-  font-size: 13px;
-  color: #ccc;
-  margin-top: 10px;
 }
 
+.terms-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #ffffff;
+  text-shadow: 0 0 3px #00bfff;
+}
 
+/* CTA BUTTON FIX */
+.cta-btn {
+  background-color: #00bfff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
 
+.cta-btn:hover {
+  background-color: #0099cc;
+}
+
+/* CTA SUBNOTE */
+.cta-sub {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: 10px;
+  text-shadow: 0 0 3px #00bfff;
+  text-align: center;
+}
