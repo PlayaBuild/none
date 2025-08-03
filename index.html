@@ -214,3 +214,127 @@
 <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PlayaBuild – Subscribe</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #00AEEF;
+      text-align: center;
+    }
+
+    .terms-container {
+      background-color: #111;
+      border: 1px solid #555;
+      padding: 20px;
+      height: 300px;
+      overflow-y: scroll;
+      margin: 20px 0;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .checkbox input {
+      margin-right: 10px;
+      transform: scale(1.5);
+    }
+
+    button.subscribe-btn {
+      background-color: #00AEEF;
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .subscribe-btn:disabled {
+      background-color: #444;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PlayaBuild Subscription</h1>
+  <p style="text-align:center;">Only $9.99/month – Unlock full payout access</p>
+
+  <div class="terms-container" id="termsBox">
+    <h3>PlayaBuild Recruiter Terms & Conditions</h3>
+    <p>
+      By subscribing to PlayaBuild, you agree to follow all rules set forth by our Recruiter Protection Bill. These include:
+    </p>
+
+    <ul>
+      <li>You must be at least 18 years old to earn payouts.</li>
+      <li>No duplicate email accounts or self-referrals allowed.</li>
+      <li>Anyone caught cheating will forfeit all payouts and be banned.</li>
+      <li>Only active paying subscribers count toward your rank.</li>
+      <li>Anyone who cancels their subscription loses their rank permanently.</li>
+      <li>All payments are final. No refunds, even if you cancel.</li>
+      <li>Fake emails, bots, or prepaid gift card abuse will lead to account shutdown.</li>
+      <li>VC-based sweepstakes, giveaways, and bonuses are subject to eligibility, fairness checks, and randomization protocols.</li>
+      <li>We reserve the right to audit your referrals at any time.</li>
+      <li>Payouts may be delayed or revoked if fraud is detected or TOS are violated.</li>
+    </ul>
+
+    <h4>Teenagers & Legal Age</h4>
+    <p>
+      We do not knowingly pay out to users under 18. If you are underage and found participating without legal consent,
+      you will be removed from the system. There is no current ID verification, so parents/guardians assume responsibility
+      for any underage accounts. By checking the box, you affirm that you are 18+ and accept full responsibility for your subscription and recruits.
+    </p>
+
+    <h4>Stripe Compliance</h4>
+    <p>
+      By subscribing, you authorize a recurring charge of $9.99/month. You may cancel anytime, but access and payout eligibility will end immediately.
+      Subscription is required to maintain your rank and payout eligibility.
+    </p>
+  </div>
+
+  <div class="checkbox">
+    <input type="checkbox" id="agreeBox">
+    <label for="agreeBox">I agree to the PlayaBuild Terms & Conditions above</label>
+  </div>
+
+  <button class="subscribe-btn" id="subscribeBtn" disabled>
+    Subscribe & Join PlayaBuild
+  </button>
+
+  <!-- Placeholder: insert your Stripe script or payment link/button here -->
+  <script>
+    const checkbox = document.getElementById("agreeBox");
+    const subscribeBtn = document.getElementById("subscribeBtn");
+
+    checkbox.addEventListener("change", () => {
+      subscribeBtn.disabled = !checkbox.checked;
+    });
+
+    subscribeBtn.addEventListener("click", () => {
+      if (checkbox.checked) {
+        // Replace this with your actual Stripe checkout redirect
+        window.location.href = "https://your-stripe-payment-link.com";
+      }
+    });
+  </script>
+
+</body>
+</html>
