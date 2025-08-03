@@ -517,5 +517,81 @@
   color: white;
   text-shadow: 0 0 6px rgba(0, 255, 255, 0.8); /* match “Earn Fast” glow */
 }
+.terms-box {
+  width: 600px;
+  max-width: 90%;
+  margin: 50px auto;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+  border: 1px solid #007BFF;
+  box-shadow: 0 0 15px #007BFF;
+}
+
+.terms-box h2 {
+  font-size: 20px;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 8px #007BFF, 0 0 16px #007BFF;
+}
+
+.terms-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.terms-box label {
+  display: block;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.terms-box a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 4px #007BFF, 0 0 8px #007BFF;
+}
+
+.terms-box a:hover {
+  text-decoration: underline;
+}
+
+.terms-box .cta-btn {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #007BFF;
+  color: #000;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 12px #007BFF, 0 0 24px #007BFF;
+  transition: opacity 0.3s ease;
+}
+
+.terms-box .cta-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.terms-box .subnote,
+.terms-box .email-note {
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
 
 
