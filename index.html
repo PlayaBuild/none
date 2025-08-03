@@ -215,13 +215,21 @@
     }
 
     .terms-container {
-      background-color: #111;
-      border: 1px solid #555;
-      padding: 20px;
-      height: 300px;
-      overflow-y: scroll;
-      margin: 20px 0;
-    }
+  background-color: #111;
+  border: 1px solid #555;
+  padding: 10px;
+  height: 250px;
+  width: 350px;
+  overflow-y: scroll;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.terms-container ul {
+  font-size: 14px;
+  padding-left: 20px;
+}
+
 
     .checkbox {
       display: flex;
@@ -257,14 +265,12 @@
 <body>
 
   <h1>PlayaBuild Subscription</h1>
-  <p style="text-align:center;">Only $9.99/month – Unlock full payout access</p>
+<p style="text-align:center;">Only $9.99/month – Unlock full payout access</p>
 
-  <div class="terms-container" id="termsBox">
-    <h3>PlayaBuild Recruiter Terms & Conditions</h3>
-    <p>
-      By subscribing to PlayaBuild, you agree to follow all rules set forth by our Recruiter Protection Bill. These include:
-    </p>
-
+<!-- SMALLER TERMS BOX -->
+<div class="terms-container" id="termsBox">
+  <h3 style="margin-top: 0;">Recruiter Terms & Conditions</h3>
+  <div class="terms-content">
     <ul>
       <li>You must be at least 18 years old to earn payouts.</li>
       <li>No duplicate email accounts or self-referrals allowed.</li>
@@ -272,11 +278,22 @@
       <li>Only active paying subscribers count toward your rank.</li>
       <li>Anyone who cancels their subscription loses their rank permanently.</li>
       <li>All payments are final. No refunds, even if you cancel.</li>
-      <li>Fake emails, bots, or prepaid gift card abuse will lead to account shutdown.</li>
-      <li>VC-based sweepstakes, giveaways, and bonuses are subject to eligibility, fairness checks, and randomization protocols.</li>
-      <li>We reserve the right to audit your referrals at any time.</li>
-      <li>Payouts may be delayed or revoked if fraud is detected or TOS are violated.</li>
+      <li>Fake emails, bots, or prepaid gift card abuse will lead to shutdown.</li>
+      <li>Sweepstakes and bonuses are subject to fairness checks and eligibility.</li>
+      <li>We reserve the right to audit referrals at any time.</li>
+      <li>Payouts may be revoked if fraud or TOS violations are found.</li>
     </ul>
+  </div>
+</div>
+
+<div class="checkbox">
+  <input type="checkbox" id="agreeBox">
+  <label for="agreeBox">I agree to the PlayaBuild Terms & Conditions above</label>
+</div>
+
+<button class="subscribe-btn" id="subscribeBtn" disabled>
+  Subscribe & Join PlayaBuild
+</button>
 
     <h4>Teenagers & Legal Age</h4>
     <p>
