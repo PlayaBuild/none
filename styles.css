@@ -386,57 +386,5 @@
     font-weight: bold;
     color: #00bfff;
   }
-/* TERMS & CONDITIONS SECTION */
-.terms-container {
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 40px 30px;
-  border-radius: 10px;
-  max-width: 700px;
-  margin: 60px auto 100px;
-  box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
-  color: #ffffff;
-}
 
-.terms-container h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #ffffff;
-  text-shadow: 0 0 8px #00bfff, 0 0 12px #00bfff;
-  text-align: center;
-}
-
-.terms-container p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 12px;
-  color: #ffffff;
-  text-shadow: 0 0 3px #00bfff;
-}
-
-/* CTA BUTTON FIX */
-.cta-btn {
-  background-color: #00bfff;
-  color: black;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 25px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 30px;
-}
-
-.cta-btn:hover {
-  background-color: #0099cc;
-}
-
-/* CTA SUBNOTE */
-.cta-sub {
-  font-size: 0.9rem;
-  color: #ffffff;
-  margin-top: 10px;
-  text-shadow: 0 0 3px #00bfff;
-  text-align: center;
-}
 
