@@ -475,4 +475,10 @@
   footer a:hover {
     text-decoration: underline;
   }
-  
+  a.email-link {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px #007BFF, 0 0 10px #007BFF;
+}
+
