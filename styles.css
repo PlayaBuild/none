@@ -365,3 +365,61 @@ h3 {
   font-size: 1.2rem !important;
   color: white !important;
 }
+  .terms-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 480px;
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.terms-container h2 {
+  color: white;
+  text-shadow: 0 0 6px #ffffff; /* White glow */
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.terms-scroll-box {
+  max-height: 120px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 10px; /* extremely small text */
+  text-align: left;
+  line-height: 1.4;
+  color: #cccccc;
+
+  /* ✅ White glow effect like the CTA */
+  box-shadow: 0 0 10px 1px #ffffff;
+}
+
+/* Optional custom scrollbar */
+.terms-scroll-box::-webkit-scrollbar {
+  width: 5px;
+}
+.terms-scroll-box::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.terms-checkbox {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.terms-checkbox input[type="checkbox"] {
+  transform: scale(1.1);
+}
+
