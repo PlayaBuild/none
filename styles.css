@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,156 +6,106 @@
 }
 
 body {
-  background-color: black;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   color: white;
-  overflow-x: hidden;
+  background-color: black;
+  line-height: 1.6;
 }
 
-/* Generic Section Styling */
-.section {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 80px 20px;
+/* Section backgrounds */
+.hero {
+  background: url('galaxy-hero.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
   text-align: center;
-  position: relative;
 }
 
-.section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
+.about {
+  background: url('galaxy-about.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+}
+
+.footer {
+  background: url('galaxy-footer.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+}
+
+.features {
+  background: url('galaxy-feature.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+}
+
+.privacy {
+  background: url('galaxy-hero.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+}
+
+.legal {
+  background: url('galaxy-about.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+}
+
+/* Shared section styles */
+section {
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.6));
-  z-index: 0;
+  min-height: 100vh;
 }
 
-.section * {
-  position: relative;
-  z-index: 1;
-}
-
-/* ✅ Section Backgrounds */
-#hero {
-  background-image: url('./img/galaxy-hero.jpg');
-}
-
-#about {
-  background-image: url('./img/galaxy-about.jpg');
-}
-
-#footer {
-  background-image: url('./img/galaxy-footer.jpg');
-}
-
-#features {
-  background-image: url('./img/galaxy-feature.jpg');
-}
-
-#testimonials {
-  background-image: url('./img/galaxy-hero.jpg');
-}
-
-#legal {
-  background-image: url('./img/galaxy-about.jpg');
-}
-
-/* Headings & Text */
-.section h1, .section h2 {
-  font-size: 2.5rem;
-  text-shadow: 0 0 10px #00bfff;
+/* Hero section */
+.hero h1 {
+  font-size: 2.8rem;
   margin-bottom: 20px;
 }
 
-.section p {
+.hero p {
   font-size: 1.2rem;
-  text-shadow: 0 0 6px #00bfff;
-  max-width: 800px;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-/* CTA Button */
 .cta-btn {
-  background-color: transparent;
+  padding: 12px 24px;
+  font-size: 1rem;
   color: white;
-  font-size: 1.2rem;
-  padding: 12px 30px;
-  border: 2px solid #00bfff;
-  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid white;
   cursor: pointer;
-  margin-top: 20px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+  margin-bottom: 10px;
 }
 
 .cta-btn:hover {
-  background-color: #00bfff;
+  background-color: white;
   color: black;
 }
 
-/* ✅ Legal Scroll Box */
-.legal-scroll-box {
-  max-height: 150px;
-  overflow-y: scroll;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 15px;
-  border: 2px solid white;
-  box-shadow: 0 0 10px white;
-  border-radius: 8px;
-  font-size: 0.75rem;
-  text-align: left;
-  margin: 30px auto 10px auto;
-  max-width: 800px;
-}
-
-/* Checkbox Area */
-.legal-agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
+.cta-sub {
   font-size: 0.9rem;
-}
-
-.legal-agreement input[type="checkbox"] {
-  margin-right: 10px;
-  transform: scale(1.2);
-}
-
-/* Final CTA Message */
-.final-cta-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-top: 30px;
-  text-shadow: 0 0 8px #00bfff;
-}
-
-.subscription-note {
-  font-size: 0.85rem;
+  margin-top: 5px;
   color: #ccc;
-  margin-top: 10px;
-  text-shadow: 0 0 5px #00bfff;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .section h1, .section h2 {
-    font-size: 1.8rem;
-  }
+/* Legal terms scroll box */
+.terms-box {
+  width: 90%;
+  max-width: 700px;
+  height: 150px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid white;
+  padding: 10px;
+  margin: 20px auto;
+  font-size: 0.75rem;
+  color: white;
+  box-shadow: 0 0 10px white;
+}
 
-  .section p {
-    font-size: 1rem;
-  }
+/* Checkbox and label */
+.terms-agree {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  .cta-btn {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .legal-scroll-box {
-    font-size: 0.7rem;
-  }
+.terms-agree label {
+  font-size: 0.85rem;
+  color: white;
+  margin-left: 5px;
 }
