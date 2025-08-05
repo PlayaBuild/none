@@ -1,50 +1,50 @@
-/* Full background for the whole page */
-body {
-  margin: 0;
-  padding: 0;
+.hero {
+  background-color: #000000; /* Solid black background */
   height: 100vh;
-  background: url('galaxy-hero.jpg') no-repeat center center fixed;
-  background-size: cover;
-  font-family: Arial, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+  text-align: center;
   color: white;
 }
 
-/* Hero Section Styles */
-.hero {
-  text-align: center;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  background: transparent;
+.hero-logo {
+  width: 180px;
+  margin-bottom: 30px;
 }
 
-/* Headline */
 .hero h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-shadow: 0 0 10px #00bfff;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px white;
 }
 
-/* Subtext Styles */
-.hero-stats,
+.hero-stats {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-shadow: 0 0 5px white;
+}
+
 .description,
 .cta-sub {
-  font-size: 18px;
-  margin: 10px 0;
-  text-shadow: 0 0 5px #00bfff;
+  font-size: 1rem;
+  text-shadow: 0 0 5px white;
+  margin-bottom: 10px;
 }
 
-/* Call-to-Action Button */
 .cta-btn {
-  background-color: transparent;
-  border: 2px solid #00bfff;
-  color: #00bfff;
-  padding: 12px 25px;
-  font-size: 16px;
+  margin-top: 15px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 20px;
-  text-shadow: 0 0 5px #00bfff;
 }
 
 .cta-btn:hover {
