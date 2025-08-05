@@ -1,111 +1,436 @@
-/* Reset */
-* {
+/* Full background for the whole page */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+  height: 100vh;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
   font-family: Arial, sans-serif;
   color: white;
-  background-color: black;
-  line-height: 1.6;
 }
 
-/* Section backgrounds */
+/* Hero Section Styles */
 .hero {
-  background: url('galaxy-hero.jpg') no-repeat center center/cover;
-  padding: 100px 20px;
   text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: transparent;
 }
 
-.about {
-  background: url('galaxy-about.jpg') no-repeat center center/cover;
-  padding: 80px 20px;
-}
-
-.footer {
-  background: url('galaxy-footer.jpg') no-repeat center center/cover;
-  padding: 80px 20px;
-}
-
-.features {
-  background: url('galaxy-feature.jpg') no-repeat center center/cover;
-  padding: 80px 20px;
-}
-
-.privacy {
-  background: url('galaxy-hero.jpg') no-repeat center center/cover;
-  padding: 80px 20px;
-}
-
-.legal {
-  background: url('galaxy-about.jpg') no-repeat center center/cover;
-  padding: 80px 20px;
-}
-
-/* Shared section styles */
-section {
-  width: 100%;
-  min-height: 100vh;
-}
-
-/* Hero section */
+/* Headline */
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 48px;
+  font-weight: bold;
   margin-bottom: 20px;
+  text-shadow: 0 0 10px #00bfff;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+/* Subtext Styles */
+.hero-stats,
+.description,
+.cta-sub {
+  font-size: 18px;
+  margin: 10px 0;
+  text-shadow: 0 0 5px #00bfff;
 }
 
+/* Call-to-Action Button */
 .cta-btn {
-  padding: 12px 24px;
-  font-size: 1rem;
-  color: white;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #00bfff;
+  color: #00bfff;
+  padding: 12px 25px;
+  font-size: 16px;
   cursor: pointer;
-  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  text-shadow: 0 0 5px #00bfff;
 }
 
 .cta-btn:hover {
-  background-color: white;
+  background-color: #00bfff;
   color: black;
 }
 
-.cta-sub {
-  font-size: 0.9rem;
-  margin-top: 5px;
-  color: #ccc;
-}
 
-/* Legal terms scroll box */
-.terms-box {
-  width: 90%;
-  max-width: 700px;
-  height: 150px;
-  overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 1px solid white;
-  padding: 10px;
-  margin: 20px auto;
-  font-size: 0.75rem;
+/* CALL TO ACTION BUTTON */
+.cta-btn {
+  background: transparent;
+  border: 2px solid #00bfff;
   color: white;
-  box-shadow: 0 0 10px white;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+  transition: all 0.3s ease;
 }
 
-/* Checkbox and label */
-.terms-agree {
+.cta-btn:hover {
+  background: #00bfff;
+  color: black;
+  box-shadow: 0 0 20px #00bfff, 0 0 40px #00bfff;
+}
+section {
+  padding: 60px 20px;
   text-align: center;
-  margin-top: 10px;
+  color: white;
+  text-shadow: 0 0 8px #00bfff, 0 0 15px #00bfff;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px #00bfff, 0 0 25px #00bfff;
+}
+
+section p,
+section ul,
+section blockquote {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
   margin-bottom: 10px;
 }
 
-.terms-agree label {
-  font-size: 0.85rem;
+/* Carousel */
+.carousel {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 20px auto;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  padding: 15px 30px;
   color: white;
-  margin-left: 5px;
+  font-size: 1.2rem;
+  text-shadow: 0 0 8px #00bfff, 0 0 20px #00bfff;
+}
+
+@keyframes scroll {
+  0% {
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+      section h2 {
+        text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff;
+      }
+      text-shadow: none; /* Add this line */
+    }
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Highlight Row */
+/* Highlight Row */
+.highlight-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+}
+/* Highlight Box */
+.highlight-box {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+  box-shadow: 0 0 10px #00bfff, 0 0 30px #00bfff;
+}
+/* Testimonial Card */
+.testimonial-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px #00bfff, 0 0 30px #00bfff;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 0 0 10px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #00bfff;
+}
+.cta-banner {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+.cta-banner h2 {
+  margin-bottom: 20px;
+}
+.cta-banner .cta-btn {
+  background: transparent;
+  border: 2px solid #00bfff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+  transition: all 0.3s ease;
+}
+
+.cta-banner .cta-btn:hover {
+  background: #00bfff;
+  color: black;
+  box-shadow: 0 0 20px #00bfff, 0 0 40px #00bfff;
+}
+
+.fine-print {
+  font-size: 0.8rem;
+  color: #ccc;
+  text-shadow: none;
+}
+/* Force full black background across the page */
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Section layout + electric blue glow */
+section {
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 8px #00bfff, 0 0 15px #00bfff;
+}
+
+/* Optional: Softer glow for headlines */
+section h2,
+section h3 {
+  text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff;
+}
+/* Subscription & Rank Section */
+.subscription-section {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px #00bfff, 0 0 40px #00bfff;
+}
+
+.subscription-section h2 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 0 8px #00bfff, 0 0 15px #00bfff;
+  margin-bottom: 20px;
+}
+
+.subscription-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 0 0 5px #00bfff;
+}
+
+.subscription-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.subscription-section ul li {
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0 0 5px #00bfff;
+  margin: 8px 0;
+}
+/* Glow Styles Update */
+h1,
+h2,
+h3 {
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 123, 255, 0.8), 0 0 15px rgba(0, 123, 255, 0.6);
+}
+
+p,
+li,
+span {
+  color: white;
+  text-shadow: none; /* No glow for smaller text */
+}
+
+.cta-button {
+  color: white;
+  border: 2px solid #007bff; /* Electric blue outline */
+  background-color: transparent;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(0, 123, 255, 1); /* Stronger glow on CTA */
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #007bff;
+  color: black;
+  text-shadow: none;
+}
+/* --- Fix testimonial small text color --- */
+.testimonial p,
+.testimonial span,
+.testimonial small {
+  color: white !important;
+}
+
+/* --- Remove the blue line (divider or border) --- */
+hr,
+.section-divider {
+  display: none;
+  border: none;
+}
+
+/* --- If there’s a border-bottom on section titles, remove it --- */
+.section-title,
+h2,
+h3 {
+  border-bottom: none !important;
+}
+/* Remove glow from testimonial text */
+.testimonial-card blockquote,
+.testimonial-card p {
+  text-shadow: none !important;
+  color: white !important;
+}
+
+/* Remove blue line between sections */
+.legal {
+  border-bottom: none !important;
+}
+
+/* Optional: Ensure no top border for CTA */
+.cta-banner {
+  border-top: none !important;
+}
+/* Fix small hero text and CTA text (white, no glow) */
+.hero p,
+.hero .description,
+.cta-banner h2,
+.cta-banner p {
+  color: white !important;
+  text-shadow: none !important;
+/* === HERO TEXT FIXES – LOCKED IN === */
+.hero {
+  position: relative;
+  padding-top: 20px !important;
+  padding-bottom: 40px !important;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.hero h1 {
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+  font-size: 2.5rem !important;
+  color: #007BFF !important; /* Electric Blue */
+  text-shadow: 0 0 10px #007BFF !important;
+}
+
+.hero p {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  font-size: 1.2rem !important;
+  color: white !important;
+}
+  .terms-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 480px;
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.terms-container h2 {
+  color: white;
+  text-shadow: 0 0 6px #ffffff; /* White glow */
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.terms-scroll-box {
+  max-height: 120px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 10px; /* extremely small text */
+  text-align: left;
+  line-height: 1.4;
+  color: #cccccc;
+
+  /* ✅ White glow effect like the CTA */
+  box-shadow: 0 0 10px 1px #ffffff;
+}
+
+/* Optional custom scrollbar */
+.terms-scroll-box::-webkit-scrollbar {
+  width: 5px;
+}
+.terms-scroll-box::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.terms-checkbox {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.terms-checkbox input[type="checkbox"] {
+  transform: scale(1.1);
 }
