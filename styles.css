@@ -209,14 +209,6 @@ blockquote {
   color: #ccc;
   text-shadow: none;
 }
-/* Force full black background across the page */
-body {
-  background-color: black;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
 
 /* Section layout + electric blue glow */
 section {
