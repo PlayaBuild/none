@@ -1,9 +1,14 @@
 .hero {
-  background: url("blackguy.JPG") no-repeat center top;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.png');
   background-size: cover;
-  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
+}
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -421,17 +426,5 @@ h3 {
 
 .terms-checkbox input[type="checkbox"] {
   transform: scale(1.1);
-}
-/* Stretch background image across entire landing page */
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url('background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'YourPreferredFont', sans-serif;
-  color: white; /* Optional: ensures text shows well on dark background */
 }
 
