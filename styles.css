@@ -1,49 +1,57 @@
-.hero {
+/* Full background for the whole page */
+body {
   margin: 0;
   padding: 0;
-  background-image: url('background.png');
+  height: 100vh;
+  background: url('background.png') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  min-height: 100vh;
-}
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
+  font-family: Arial, sans-serif;
   color: white;
-  padding-top: 320px; /* bring everything down */
-  box-sizing: border-box;
-  position: relative;
-} /* MAIN HEADING */
+}
+
+/* Hero Section Styles */
+.hero {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: transparent;
+}
+
+/* Headline */
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 48px;
   font-weight: bold;
-  color: #ffffff;
-  text-shadow: 0 0 8px #00bfff, 0 0 12px #00bfff;
   margin-bottom: 20px;
+  text-shadow: 0 0 10px #00bfff;
 }
 
-/* SUB HEADING */
-.hero p {
-  font-size: 1.2rem;
-  color: #ffffff;
-  text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff;
-  margin-bottom: 20px;
+/* Subtext Styles */
+.hero-stats,
+.description,
+.cta-sub {
+  font-size: 18px;
+  margin: 10px 0;
+  text-shadow: 0 0 5px #00bfff;
 }
 
-/* DESCRIPTION */
-.description {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #ffffff;
-  text-shadow: 0 0 4px #00bfff;
-  max-width: 600px;
-  margin-bottom: 30px;
+/* Call-to-Action Button */
+.cta-btn {
+  background-color: transparent;
+  border: 2px solid #00bfff;
+  color: #00bfff;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  text-shadow: 0 0 5px #00bfff;
 }
+
+.cta-btn:hover {
+  background-color: #00bfff;
+  color: black;
+}
+
 
 /* CALL TO ACTION BUTTON */
 .cta-btn {
